@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>404 · AI Agent Journal</title>
+<meta name="robots" content="noindex"/>
+<style>
+  :root{
+    --bg:#f5f4ef;--text:#1a1a1a;--muted:#6b6b6b;--border:#d8d5cc;
+    --card:#eeecea;--accent:#1a1a1a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;font-size:16px}
+  a{color:inherit;text-decoration:none}
+
+  nav{border-bottom:1px solid var(--border);padding:0 5%}
+  .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
+  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+  .nav-links{display:flex;gap:.3rem;align-items:center;font-size:.82rem;color:var(--muted)}
+  .nav-links span{margin:0 .2rem;color:var(--border)}
+  .nav-links a:hover{color:var(--text)}
+  .btn-submit{font-family:Georgia,serif;font-size:.82rem;border:1px solid var(--text);padding:.35rem .9rem;border-radius:2px;background:var(--text);color:var(--bg);cursor:pointer;transition:.15s}
+  .btn-submit:hover{background:transparent;color:var(--text)}
+
+  .hero{padding:56px 5% 36px;border-bottom:1px solid var(--border)}
+  .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:start}
+  .hero-badge{display:inline-block;border:1px solid var(--border);border-radius:999px;font-size:.72rem;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .85rem;color:var(--muted);margin-bottom:1.2rem}
+  h1{font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:.8rem}
+  .hero-sub{font-size:1rem;color:var(--muted);line-height:1.65;max-width:520px}
+  .hint{margin-top:1.1rem;font-size:.9rem;color:var(--muted);font-family:system-ui,sans-serif}
+  .hint code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.86em;border:1px solid var(--border);background:var(--card);padding:.1rem .35rem;border-radius:3px}
+
+  .panel{border:1px solid var(--border);background:transparent}
+  .panel-top{padding:1.2rem 1.3rem;border-bottom:1px solid var(--border)}
+  .panel-top .k{font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .panel-top .v{margin-top:.35rem;font-size:.95rem;color:var(--text);line-height:1.45}
+  .panel-actions{padding:1.1rem 1.3rem;display:flex;flex-wrap:wrap;gap:.7rem}
+  .btn{font-family:Georgia,serif;font-size:.9rem;border:1px solid var(--text);padding:.55rem 1.25rem;white-space:nowrap;cursor:pointer;transition:.15s;display:inline-block;text-align:center;border-radius:2px}
+  .btn.filled{background:var(--text);color:var(--bg)}
+  .btn.filled:hover{background:transparent;color:var(--text)}
+  .btn.outline:hover{background:var(--text);color:var(--bg)}
+  @media(max-width:780px){.hero-inner{grid-template-columns:1fr;gap:1.6rem}}
+
+  .divider{max-width:1100px;margin:0 auto;padding:2.1rem 5% .8rem;display:flex;align-items:center;gap:1rem}
+  .divider-label{font-family:system-ui,sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .divider-line{flex:1;height:1px;background:var(--border)}
+
+  .cards-row{max-width:1100px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--border)}
+  .card{border-right:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.6rem 1.6rem 1.6rem 1.4rem}
+  .card-tag{font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.7rem}
+  .card h3{font-size:1rem;font-weight:700;line-height:1.35;margin-bottom:.55rem;letter-spacing:-.01em}
+  .card p{font-size:.88rem;color:var(--muted);line-height:1.55}
+  .card a{ text-decoration:underline; text-underline-offset:3px }
+  .card a:hover{color:var(--text)}
+  @media(max-width:780px){.cards-row{grid-template-columns:1fr}}
+
+  footer{border-top:1px solid var(--border);padding:1.8rem 5%;max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;font-family:system-ui,sans-serif;color:var(--muted);gap:1rem;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-547ES76WLY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-547ES76WLY');
+</script>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="scNAyB6Y9BWsluzxxfA7Hg" async></script>
+</head>
+
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">AI Agent Journal</a>
+    <div style="display:flex;align-items:center;gap:1.5rem">
+      <div class="nav-links">
+        <a href="/#scope">Scope</a><span>·</span>
+        <a href="/#format">Format</a><span>·</span>
+        <a href="/#pricing">Fees</a><span>·</span>
+        <a href="/#submit">Submit</a>
+      </div>
+      <a href="/#submit" class="btn-submit">Submit Paper</a>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">404 · Page not found</div>
+      <h1>This page does not exist.</h1>
+      <p class="hero-sub">
+        The link may be outdated, the URL may be mistyped, or the page may have moved.
+        Use the quick links below to continue.
+      </p>
+      <p class="hint">Tried: <code id="path"></code></p>
+    </div>
+
+    <div class="panel" aria-label="Quick actions">
+      <div class="panel-top">
+        <div class="k">Next steps</div>
+        <div class="v">Go to the homepage, view the submission format, or contact the editors.</div>
+      </div>
+      <div class="panel-actions">
+        <a class="btn filled" href="/">Go to homepage</a>
+        <a class="btn outline" href="/#format">LaTeX template</a>
+        <a class="btn outline" href="mailto:editors@aiagentjournal.org">Email editors</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="divider" style="padding-left:5%;padding-right:5%">
+    <span class="divider-label">Recommended links</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="cards-row">
+    <div class="card">
+      <div class="card-tag">Partner</div>
+      <h3><a href="https://highimpactjournal.org/">High Impact Journal</a></h3>
+      <p>High-signal publishing and curation for impactful technical writing.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">Singapore</div>
+      <h3><a href="https://sup.sg/">SUP.sg</a></h3>
+      <p>Local initiatives and resources for builders and researchers.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">Education</div>
+      <h3><a href="https://gta.sg/">GTA.sg</a></h3>
+      <p>Learning resources and programs with a practical, outcomes-driven focus.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 AI Agent Journal · Open Access · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · ISSN pending</span>
+  <span><a href="/#submit">Submit</a> · <a href="/#scope">Scope</a> · <a href="/#pricing">Fees</a></span>
+</footer>
+
+<script>
+  (function(){
+    var el = document.getElementById('path');
+    if (el) el.textContent = (location.pathname || "/") + (location.search || "") + (location.hash || "");
+  })();
+</script>
+</body>
+</html>
