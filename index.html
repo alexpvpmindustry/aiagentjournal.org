@@ -17,7 +17,8 @@
   /* NAV */
   nav{border-bottom:1px solid var(--border);padding:0 5%}
   .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
-  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:Georgia,serif;font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+  .logo img{height:28px;width:auto;display:block}
   .nav-links{display:flex;gap:.3rem;align-items:center;font-size:.82rem;color:var(--muted)}
   .nav-links span{margin:0 .2rem;color:var(--border)}
   .nav-links a:hover{color:var(--text)}
@@ -114,7 +115,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-547ES76WLY');
 </script>
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="scNAyB6Y9BWsluzxxfA7Hg" async></script>
@@ -124,7 +124,10 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">AI Agent Journal</div>
+    <div class="logo">
+      <img src="logo/aiagent_logo_transparent.png" alt="AI Agent Journal logo"/>
+      AI Agent Journal
+    </div>
     <div style="display:flex;align-items:center;gap:1.5rem">
       <div class="nav-links">
         <a href="#scope">Scope</a><span>·</span>
